@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Slabo+27px&display=swap');
+
+*,
+*::before,
+*::after {
+    /* webkit and border box is used for browser support */
+    /* ye by default pure website me ye cheije chalengi */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+:root {
+    /* background color */
+    --bg-white: var(#fff);
+
+    /* text color */
+    --primary-text: #061738;
+    --secondary-color: #60cd12;
+    --light-color: #e2f6de;
+    --dark-color: #03262c;
+    --text-white: #fff;
+    --text-gray: #dee2e6;
+    --anchor-color: #007aff;
+
+    /* font family */
+    --primary-font: 'Montserrat', 'san-serif';
+    --secondary-font: 'Quicksand', 'Roboto';
+}
+
+body,
+html {
+    color: var(--primary-text);
+    font-size: 10px;
+    font-weight: 400;
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/* one rem=10px we have defined that in our rrot that's why */
+/* to change any thing in our h2 or any para change here font size and all */
+h1 {
+    font-size: 7rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    color: #e7e7e7;
+    margin: 3rem;
+    margin-left: 5.1rem;
+}
+
+h2 {
+    color: #ff4052;
+    font-size: 4.7rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+/* 3.1 means 31px */
+h3 {
+    color: #e10035;
+    font-size: 3.1rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-left: 5.1rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #e10035;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary-text);
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    color: var(--primary-text);
+    font-family: var(--secondary-font);
+    margin-left: 5.1rem;
+    font-weight: 600;
+
+}
+
+/* .nav-item{
+    font-size: 25px;
+} */
+
+embed,
+iframe,
+img,
+object {
+    max-width: 100%;
+    margin: auto;
+}
+
+/* whenever we type ul this will be added by defaul*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+button {
+    text-decoration: none;
+    outline: 0;
+}
+
+/* whenever we type li this will be added by defaul*/
+li a {
+    color: var(--text-white);
+}
+
+/* hover on buttons  */
+a:hover,
+button:hover {
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+/* this will be the customised scrollbar */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #061738;
+}
+
+/* this will be applied for all buttons we add  */
+.main-btn {
+    position: relative;
+    color: white;
+    background: linear-gradient(to right, #dc3545, #dc3545);
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid var(--bg-white);
+    border-radius: 3.5rem;
+    text-transform: capitalize;
+    padding: 1rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.2rem;
+    margin-left: 5.1rem;
+}
+
+.main-btn:hover {
+    background: var(--bg-white);
+    color: #dc3545;
+    font-weight: 600;
+    border: 0.2rem solid #dc3545;
+}
+
+/* section jab bhi hum apni html file mai add karenge tab tab tey wala css usmai automically add hoga */
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #dc3545;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--primary-font);
+    font-family: var(--secondary-font);
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+/* multipage ka jo banner same the wo iss ke vajase the */
+.FAQs .banner_section,
+.varieties .banner_section,
+.gallery .banner_section,
+.contact .banner_section {
+    background: url('../images/handman.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    min-height: auto;
+}
+
+/* 01 navbar css */
+/* matlab jo upper ka spaceing hai wo ye handle karta  hai */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 1rem;
+    left: 0;
+    z-index: 1;
+}
+
+/* abhi agar koi image dalni ho navbar mai to ye yaha se handle hota hai */
+.header .navbar{
+    /* background: url('../images/logo/cake01.png'); */
+    background-color: #ffe4e1;
+    background-repeat:no-repeat ;
+    background-position:center ;
+    background-size:contain ;
+    padding: 2rem 5rem;
+} 
+
+.header .navbar-brand {
+    width: 20rem;
+    margin-top: -0.1rem;
+}
+
+/* ye jo hai home and all except call us button */
+.header .navbar-nav .nav-link {
+    color: rgb(253, 17, 128);
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    margin: 0 0.2rem;
+    font-family: var(--primary-font);
+}
+
+/* jo home wagera font hai wo jab bhi hover kare tab tab colour change hona chiye  */
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active {
+    color: #061738;
+}
+
+/* ye wo jo button hai side wala three icones uska color change karne ke liye */
+.header .navbar-toggler {
+    color: #00014f;
+    font-size: 2rem;
+    height: 2.7rem;
+    padding: 0;
+}
+
+/* ye jo box pe shadow aata hai usko handle karne ke liye matlab box shadow hataneke liye */
+.header .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ye to customize that call us */
+.header .header_right span {
+    color: #da3333;
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+
+/* ye to customize that phone no. */
+.header .header_right .phone_no {
+    color: #22c76a;
+    font-size: 1.7rem;
+}
+
+.header-scrolled {
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* 02 banner section */
+.banner_section {
+    background: url('../images/banner/sweets\ and\ cakes.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+
+/* jo image hai wo set karne ke liye */
+.banner_section .carousel-item {
+    padding: 3rem 0;
+    height: 90vh;
+}
+
+.banner_section .carousel-caption {
+    top: 50%;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    text-align: left;
+    width: 100%;
+}
+
+
+.banner_section .carousel-caption h3 {
+    padding: 0.5rem 1.5rem;
+    background-color: #e9ecef;
+    display: inline;
+}
+
+.banner_section .carousel-caption p {
+    max-width: 40rem;
+    margin-bottom: 2rem;
+}
+.landing_product_section{
+    background-color: rgb(251, 231, 231);
+}
+
+
+/* 03 features CSS */
+/* padding and all for box */
+.feature_section .features-box{
+    background-color: transparent;
+    border: 0.15rem solid rgb(239, 0, 40);
+    padding: 8rem 0;
+    transition: all 0.3s;
+}
+/* costomization for box */
+.feature_section .features-icon-border{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.2rem solid pink;
+    padding: 1.3rem;
+    display: inline-block;
+}
+/* costomization for icons */
+.feature_section .features-box .features-icon{
+    height: 6.5rem;
+    width: 6.5rem;
+    /* for background color on icons uncomment this */
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* to costomize the image  */
+.feature_section .features-box .features-icon img{
+    width: 8.8rem;
+}
+/* to likha hai box mai usko costomize karne ke liye */
+.feature_section .features-box  h3{
+    margin-top: 1.5rem;
+    color: rgb(194, 4, 93);
+    font-size: 1.9rem;
+    text-align: center;
+    padding-left: 0rem;
+    padding-right: 3rem;
+}
+/* to give color to backgroung when hover */
+.feature_section .features-box:hover {
+    background-color: pink;
+}
+/* to giv border to box when hover */
+.feature_section .features-box:hover h3{
+    color: rgb(194, 4, 93);
+}
+/* to give color to border when hover */
+.feature_section .features-box:hover .features-icon-border{
+    border-color:  rgb(194, 4, 93);
+}
+
+/* 04 FAQs CSS */
+/* background image */
+.landing_about_section{
+    background: url("../images/banner/banner\ about\ 1234.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 9rem 0;
+}
+.landing_about_section p{
+    color: rgb(1, 60, 41);
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------product card design ------------------------------------------------*/
+
+/* this is for product card  */
+.landing_product_section .product-card{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0.2rem solid rgb(174, 30, 54);
+    /* padding: 2rem 1rem; */
+    transition: all 0.3s;
+}
+.landing_product_section .product-card .product-img{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.landing_product_section .product-card h3{
+    color: rgb(220, 20, 53);
+}
+.landing_product_section .product-card h3{
+    margin: 0;
+    padding-top: 1rem;
+    /* padding-left: 9.5rem; */
+    text-align: center;
+}
+  */
+.landing_product_section .product-card span{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color:navy ;
+    margin-right: line-through;
+    transition: all 0.3s;
+} 
+.landing_product_section .product-card .product-details{
+    position: absolute;
+    bottom: -22rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 5rem 1rem;
+background-color: rgb(255, 224, 234);
+transition: all 0.5s ease;
+}
+.landing_product_section .product-card:hover .product-details{
+    bottom: 0;
+}
+.landing_product_section .product-card .product-details .main-btn{
+    margin-left: 5rem;
+}
+
+
+/* 07 gallery CSS */
+.gallery_section img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    display: inline;
+    border: 0.6rem solid rgb(194, 4, 93);
+    border-radius: 100;
+
+
+}
+/* footer CSS */
+.footer_wrapper{
+    background: url("../images/css\ image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 2rem;
+    padding-bottom: 0.3rem;
+    padding-left: 5rem;
+}
+.footer_wrapper h5{
+    color: hsl(239, 100%, 15%);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.company_details{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+.contact-us h5{
+font-size: 1.6rem;
+}
+
+/* --------------------------------------FAQs Banner Section-----------------------------------------------*/
+.banner_part {
+    background: url('../images/css\ image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 2vh;
+}
+
+
+/* jo image hai wo set karne ke liye */
+.banner_part .carousel-item {
+    padding: 3rem 0;
+    height: 90vh;
+}
+
+.banner_part .carousel-caption {
+    top: 50%;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    text-align: left;
+    width: 100%;
+}
+.banner_part .carousel-caption h3 {
+    padding: 0.5rem 1.5rem;
+    background-color: #d03434;
+    display: inline;
+}
+
+.banner_part .banner-content h3{
+    margin-top: 8rem;
+    margin-left: 0.7rem;
+    color: #00014f;
+    padding: 0.5rem 1.5rem;
+}
+
+.about_section .section-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.question{
+    color:#002147;
+    font-size: 1.9rem;
+}
+.answer{
+    color: #de3163;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+/* --------------------------------------------FAQs BAnner end---------------------------------------------------- */
+/* product made by us */
+.section-title{
+    color: #d10a49bf;
+}
+.contact_info{
+    background-color: #f4cad4;
+    padding-top: 2rem;
+}
+.contact_info .section-subtitle {
+    margin-right: 73rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 0 0 0 0 ;
+    display: inline-block;
+    width: 20rem;
+    margin-bottom: 0;
+    padding-left: 5rem;
+}
+.container .section-subtitle{
+    margin-bottom: 7rem;
+    text-align: center;
+    /* padding: 1rem; */
+}
+.contact_info .section-title {
+    font-size: 3.2rem;
+  
+}
+/* --------------------------------------item section-------------------------------------------- */
+.item_section .item-box{
+    background-color: rgb(255, 255, 255);
+    border: 0.39rem solid rgb(246, 86, 131);
+}
+.product-details .main-btn{
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+.item_section .item-box h3{
+    margin-left: 4rem;
+    color: #dc3545;
+}
+.product-img{
+    align-items: center;
+}
+/* .item-text h3{
+    align-content: center;
+} */
+
+.item_section .item-box .item-text-choco{
+    margin-left: -2rem;
+}
+.item_section .item-box .item-text-cup{
+    margin-left: -2rem;
+}
+.product-details-donut .main-btn{
+    align-content: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.item_section{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.landing_about_section .secpara {
+    color: rgb(254, 255, 255);
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.insta-link{
+    height: 70px;
+    width: 70px;
+    margin-left: 6.1rem;
+    margin-bottom: 2rem;
+}
+.section-sub{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary-font);
+    font-family: var(--secondary-font);
+    margin-bottom: 3rem;
+}
+.insta-link a{
+    font-size: 1.2rem;
+}
+.contact_now span{
+    font-size: 1.75rem;
+    font-weight: 600;
+display: flex;
+}
+.insta{
+    height: 30px;
+    width: 30px;
+    margin-left: 5.1rem;
+    margin-bottom: 2rem;
+
+}

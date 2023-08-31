@@ -1,0 +1,73 @@
+/* // abhi apni jo website hai wo responsive nahi hai agar hum chahate hai usko control karna ye karna padega */
+
+/* Media Query 1170px */
+@media(max-width:1170px){ 
+
+/* Genral CSS */
+.section-subtitle{
+    max-width: 60%;
+}
+
+/* 02 banner section */
+}
+
+/* Media Query 991px */
+@media(max-width:991px) {
+
+    /* Genral CSS */
+    /* this will be aplied on all the banner  */
+    .FAQs .banner_section,
+    .varieties .banner_section,
+    .gallery .banner_section,
+    .contact .banner_section {
+        padding-top: 12.5rem;
+        padding-bottom: 3rem;
+    }
+    /* 01 Navbar CSS */
+    .header .navbar{
+        background-size:cover;
+        padding: 2rem;
+    }
+    .header .navbar-nav{
+        margin-top: 2rem;
+    }
+    /* spacing between text */
+    .header .navbar-nav .nav-link{
+        padding: 0.2rem 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .header .header_right span{
+        padding: 0.2rem 0.5rem;
+    }
+
+}
+
+/* Media Query 767 */
+@media(max-width:767px) { 
+/* Genral CSS */
+body,html{
+    font-size: 8px;
+}
+.section-subtitle{
+    max-width: 80%;
+}
+/* 02 Banner section */
+.banner_section{
+    min-height: 70vh;
+}
+.banner_section .carousel-item{
+    height: 70vh;
+}
+
+}
+
+/* Media Query 590 */
+@media(max-width:590px) {
+    /* genral CSS */
+    body,html{
+        font-size: 7px;
+    }
+}
+
+
+
